@@ -23,7 +23,8 @@ export default {
   },
   mounted(){
     this.axios.post("http://127.0.0.1:8000",{
-      usertype: 0
+      username: "1",
+      password: "1",
     }).then(res=>{
       this.$store.commit("setTitle",res.data)
       console.log(this.title)
