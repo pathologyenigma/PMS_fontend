@@ -20,8 +20,10 @@
                     </div>
                     <div class="form-control">
                         <input type="text" name="verification" placeholder="please enter verification code" required>
+
+                        <Code />
                     </div>
-                    <input type="button" value="submit" class="btn btn-p" onclick=btn()> 
+                    <input type="button" value="submit" class="btn btn-p" @click="btn"> 
                 </div>
             </div>
         </div>
@@ -30,6 +32,8 @@
 </template>
 
 <script>
+
+import Code from "./code"
 export default {
     data() {
         return {
@@ -39,11 +43,15 @@ export default {
     },
     methods: {
         btn() {
-            this.axios.post("",{
+            this.axios.post("http://52.90.63.222:8000",{
                 name     : this.name,
                 password : this.password,
             })
         }
+
+    },
+    components:{
+        Code
     }
 }
 </script>
@@ -78,7 +86,7 @@ export default {
 .Showcase-from{
     position: relative;
     top: 60px;
-    height: 350px;
+    height: 400px;
     width: 400px;
     padding: 40px;
     z-index: 100;

@@ -2,8 +2,8 @@
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
             <div>
-                <h1>Loruki</h1>
-                <p>Copyright &copy;2020</p>
+                <h1>Cyberpunk</h1>
+                <p>Copyright &copy;2077</p>
             </div>
             <nav>
                 <ul>
