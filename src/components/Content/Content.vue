@@ -20,6 +20,7 @@
                     </div>
                     <div class="form-control">
                         <input type="text" name="verification" placeholder="please enter verification code" required>
+
                         <Code />
                     </div>
                     <input type="button" value="submit" class="btn btn-p" @click="btn"> 
@@ -31,6 +32,7 @@
 </template>
 
 <script>
+
 import Code from "./code"
 export default {
     data() {
@@ -46,6 +48,7 @@ export default {
                 password : this.password,
             })
         }
+
     },
     components:{
         Code

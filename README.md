@@ -1,4 +1,5 @@
-# q
+# Project management system fontend
+the fontend of Project management system
 
 ## Project setup
 ```
@@ -22,3 +23,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### the backend
+[the backend of this project](https://github.com/pathologyenigma/PMS)
