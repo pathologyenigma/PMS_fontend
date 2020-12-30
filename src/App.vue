@@ -22,7 +22,7 @@ export default {
     
   },
   mounted(){
-    this.axios.post("http://127.0.0.1:8000",{
+    this.axios.post("http://52.90.63.222:8000/",{
       usertype: 0
     }).then(res=>{
       this.$store.commit("setTitle",res.data)
